@@ -1,0 +1,20 @@
+{
+    "name": "massfice/action-manager",
+    "description": "Manager for my actions. It is for my diploma project.",
+    "type": "library",
+    "require": {
+        "massfice/action": "^1.0.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Massfice",
+            "email": "adrian.marian.tomasz.larysz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Massfice\\ActionManager\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a0c0c5ca8c8b3ea0da0ee67a1d8d675b",
+    "packages": [
+        {
+            "name": "massfice/action",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Massfice/action.git",
+                "reference": "debdff2ef8ca0a3e51c7602a3b14a1addd414037"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Massfice/action/zipball/debdff2ef8ca0a3e51c7602a3b14a1addd414037",
+                "reference": "debdff2ef8ca0a3e51c7602a3b14a1addd414037",
+                "shasum": ""
+            },
+            "require": {
+                "massfice/response-status": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Massfice\\Action\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Massfice",
+                    "email": "adrian.marian.tomasz.larysz@gmail.com"
+                }
+            ],
+            "description": "This package contains action interfaces and factiories. This is for my diploma project.",
+            "time": "2020-01-21T22:20:41+00:00"
+        },
+        {
+            "name": "massfice/response-status",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Massfice/response-status.git",
+                "reference": "1befb6d9c233af9f76f8fbf4cd77774fc3d248cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Massfice/response-status/zipball/1befb6d9c233af9f76f8fbf4cd77774fc3d248cb",
+                "reference": "1befb6d9c233af9f76f8fbf4cd77774fc3d248cb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Massfice\\ResponseStatus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Massfice",
+                    "email": "adrian.marian.tomasz.larysz@gmail.com"
+                }
+            ],
+            "description": "Package contains response-status class, that contains info about validation status, response http code, errors array, messages, etc. Project for my diploma.",
+            "time": "2020-01-21T22:15:35+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
