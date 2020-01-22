@@ -46,8 +46,6 @@ abstract class ActionManager {
         
         $this->data = $status->getData();
         return $action;
-
-        //this function should return NotAuthorized action or action
     }
 
     public function __construct(string $namespace) {
