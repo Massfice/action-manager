@@ -3,7 +3,8 @@
     "description": "Manager for my actions. It is for my diploma project.",
     "type": "library",
     "require": {
-        "massfice/action": "^1.0.1"
+        "massfice/action": "^1.0.1",
+        "massfice/action-executor": "^1.0"
     },
     "license": "MIT",
     "authors": [

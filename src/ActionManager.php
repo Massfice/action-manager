@@ -5,10 +5,13 @@ namespace Massfice\ActionManager;
 use Massfice\Action\ActionFactory;
 use Massfice\Action\JsonAction;
 use Massfice\Action\NotFound;
+use Massfice\ActionExecutor\ActionExecutor;
 
 abstract class ActionManager {
 
     protected $factory;
+    protected $executor;
+    protected $data;
 
     private function create(string $name) : JsonAction {
         $actionName = $name.$_SERVER["REQUEST_METHOD"];
@@ -41,6 +44,7 @@ abstract class ActionManager {
             $status = $action->verify();
         }
         
+        $this->data = $status->getData();
         return $action;
 
         //this function should return NotAuthorized action or action
@@ -48,6 +52,8 @@ abstract class ActionManager {
 
     public function __construct(string $namespace) {
         $this->factory = $this->getActionFactory($namespace);
+        $this->executor = null;
+        $this->data = [];
     }
 
     public function createAction($name) : JsonAction {
@@ -58,6 +64,7 @@ abstract class ActionManager {
     }
 
     abstract protected function getActionFactory(string $namespace) : ActionFactory;
+    abstract public function createExecutor() : ActionExecutor;
 }
 
 ?>

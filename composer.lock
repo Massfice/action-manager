@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0c0c5ca8c8b3ea0da0ee67a1d8d675b",
+    "content-hash": "9a960e8dac85f3c6f9a9b505391aa262",
     "packages": [
         {
             "name": "massfice/action",
@@ -41,6 +41,42 @@
             ],
             "description": "This package contains action interfaces and factiories. This is for my diploma project.",
             "time": "2020-01-21T22:20:41+00:00"
+        },
+        {
+            "name": "massfice/action-executor",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Massfice/action-executor.git",
+                "reference": "41c7df32a856f45227cde56be3682c951e29fa05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Massfice/action-executor/zipball/41c7df32a856f45227cde56be3682c951e29fa05",
+                "reference": "41c7df32a856f45227cde56be3682c951e29fa05",
+                "shasum": ""
+            },
+            "require": {
+                "massfice/action": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Massfice\\ActionExecutor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Massfice",
+                    "email": "adrian.marian.tomasz.larysz@gmail.com"
+                }
+            ],
+            "description": "Action executors for my diploma project.",
+            "time": "2020-01-22T22:22:02+00:00"
         },
         {
             "name": "massfice/response-status",
