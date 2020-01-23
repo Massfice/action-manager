@@ -17,12 +17,19 @@ abstract class ActionManager {
         $actionName = $name.$_SERVER["REQUEST_METHOD"];
         $action = $this->factory->create($actionName);
 
+        $subaction = DefaultAction::getInstance()->getDefaultAction();
+
+        if($action instanceof NotFound && $subaction !== null) {
+            $action = $subaction;
+        }
+
         if($action instanceof NotFound) {
             $allow = [];
             if($this->factory->check($name."GET")) $allow[] = "GET";
             if($this->factory->check($name."POST")) $allow[] = "POST";
             if($this->factory->check($name."PUT")) $allow[] = "PUT";
             if($this->factory->check($name."DELETE")) $allow[] = "DELETE";
+            if($this->factory->check($name."PATH")) $allow[] = "PATH";
 
             if(count($allow) > 0) {
                 $action = new MethodNotAllowed($allow);
