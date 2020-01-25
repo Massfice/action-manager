@@ -1,3 +1,3 @@
 # action-manager
 
-Managers for my actions. It is for my diploma project.
+Managers for my actions and related factory. It is for my diploma project.

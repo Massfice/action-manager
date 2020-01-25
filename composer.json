@@ -1,6 +1,6 @@
 {
     "name": "massfice/action-manager",
-    "description": "Manager for my actions. It is for my diploma project.",
+    "description": "Managers for my actions and related factory. It is for my diploma project.",
     "type": "library",
     "require": {
         "massfice/action": "^1.0.1",

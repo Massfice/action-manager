@@ -57,7 +57,6 @@ abstract class ActionManager {
 
     public function __construct(string $namespace) {
         $this->factory = $this->getActionFactory($namespace);
-        $this->executor = null;
         $this->data = [];
     }
 
