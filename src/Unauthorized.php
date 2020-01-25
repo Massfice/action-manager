@@ -13,17 +13,17 @@ class Unauthorized implements HtmlAction {
         return new VerifyStatus();
     }
 
-    public function load(array $data, array $config) : ?array {
-        return null;
+    public function load(array $data, array $config) : array {
+        return [];
     }
 
-    public function validate(?array $data) : ResponseStatus {
+    public function validate(array $data) : ResponseStatus {
         $status = ResponseStatusFactory::create(401);
         $status->addError("Unauthorized");
         return $status;
     }
 
-    public function execute(?array $data) : array {
+    public function execute(array $data) : array {
         return [];
     }
 
