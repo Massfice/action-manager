@@ -3,8 +3,9 @@
     "description": "Managers for my actions and related factory. It is for my diploma project.",
     "type": "library",
     "require": {
-        "massfice/action": "^1.0.1",
-        "massfice/action-executor": "^1.0"
+        "massfice/action": "^v1.0.1",
+        "massfice/action-executor": "^v1.0",
+        "massfice/response-status": "^v1.0"
     },
     "license": "MIT",
     "authors": [
