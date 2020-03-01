@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "massfice/action",
-            "version": "v1.0.9",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Massfice/action.git",
-                "reference": "c4312cb6b84c74a9214db05ac573713cc051cc2d"
+                "reference": "b4361bd728fb66516d867b38768b432f9309a7ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Massfice/action/zipball/c4312cb6b84c74a9214db05ac573713cc051cc2d",
-                "reference": "c4312cb6b84c74a9214db05ac573713cc051cc2d",
+                "url": "https://api.github.com/repos/Massfice/action/zipball/b4361bd728fb66516d867b38768b432f9309a7ee",
+                "reference": "b4361bd728fb66516d867b38768b432f9309a7ee",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                 }
             ],
             "description": "This package contains action interfaces and factiories. This is for my diploma project.",
-            "time": "2020-03-01T19:36:41+00:00"
+            "time": "2020-03-01T20:02:42+00:00"
         },
         {
             "name": "massfice/action-executor",
