@@ -4,8 +4,12 @@ namespace Massfice\ActionManager;
 
 use Massfice\Action\ActionFactory;
 use Massfice\Action\JsonAction;
-use Massfice\Action\NotFound;
 use Massfice\ActionExecutor\ActionExecutor;
+
+use Massfice\Action\Standart\NotFound;
+use Massfice\Action\Standart\MethodNotAllowed;
+use Massfice\Action\Standart\Unauthorized;
+
 
 abstract class ActionManager {
 
@@ -29,7 +33,7 @@ abstract class ActionManager {
             if($this->factory->check($name."POST")) $allow[] = "POST";
             if($this->factory->check($name."PUT")) $allow[] = "PUT";
             if($this->factory->check($name."DELETE")) $allow[] = "DELETE";
-            if($this->factory->check($name."PATH")) $allow[] = "PATH";
+            if($this->factory->check($name."PATCH")) $allow[] = "PATCH";
 
             if(count($allow) > 0) {
                 $action = new MethodNotAllowed($allow);

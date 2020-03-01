@@ -8,6 +8,8 @@ use Massfice\Action\JsonAction;
 use Massfice\ActionExecutor\ActionExecutor;
 use Massfice\ActionExecutor\HtmlExecutor;
 
+use Massfice\Action\Standart\BadRequest;
+
 class UnknownManager extends ActionManager {
     protected function getActionFactory(string $namespace) : ActionFactory {
         return new class($namespace) extends HtmlActionFactory {
